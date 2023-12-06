@@ -7,6 +7,9 @@
     <Filter Include="Utility">
       <UniqueIdentifier>{3b7e7be1-8b78-469c-a728-8a741ed156cc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Utility\Excel">
+      <UniqueIdentifier>{cb509970-fcc0-4fec-8a35-a38385e62660}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -18,6 +21,9 @@
     <ClInclude Include="Types.h">
       <Filter>Utility</Filter>
     </ClInclude>
+    <ClInclude Include="DataTable.h">
+      <Filter>Utility\Excel</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -25,6 +31,9 @@
     </ClCompile>
     <ClCompile Include="CommonPch.cpp">
       <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="DataTable.cpp">
+      <Filter>Utility\Excel</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
