@@ -6,7 +6,7 @@ namespace GameServer
 	{
 	public:
 		using Columns = std::vector<std::wstring>;
-		using Rows = std::vector<std::wstring>;
+		using Rows = std::vector<Columns>;
 
 		enum class EColumn
 		{
@@ -46,8 +46,8 @@ namespace GameServer
 
 	public:
 		bool Check(Columns& header);
-		bool Insert(Columns& header);
-		bool Merge(Columns& header);
+		bool Insert(Columns header);
+		bool Merge(DataTable& header);
 
 	public:
 		void InitBind();
@@ -57,7 +57,6 @@ namespace GameServer
 		void Bind(wstring key, int8_t* ptr);
 		void Bind(wstring key, float* ptr);
 		void Bind(wstring key, string* ptr);
-		void Bind(wstring key, bool* ptr);
 
 	public:
 		void InitRead();

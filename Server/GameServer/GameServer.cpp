@@ -1,7 +1,12 @@
 ﻿#include "pch.h"
 #include <iostream>
 
-int main()
+#include "GameServerApp.h"
+
+using namespace GameServer;
+
+int main(int argc, const char** argv)
 {
-    HellowWorld();
+	GameServerApp app;
+	return app.Run();
 }

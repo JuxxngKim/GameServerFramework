@@ -15,10 +15,12 @@
     <ClCompile Include="pch.cpp">
       <Filter>Utils</Filter>
     </ClCompile>
+    <ClCompile Include="GameServerApp.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
       <Filter>Utils</Filter>
     </ClInclude>
+    <ClInclude Include="GameServerApp.h" />
   </ItemGroup>
 </Project>
