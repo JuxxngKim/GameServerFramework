@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="pch">
+      <UniqueIdentifier>{fd5c03f6-10a8-4994-a65e-80375105155d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Define">
+      <UniqueIdentifier>{b1bcd4ee-853b-4526-9b3a-3e31f4859806}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{009ad20a-b6a0-4e20-ab1d-5c0d9d98f3d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\FileSystem">
+      <UniqueIdentifier>{2e4f6b84-02c6-46b1-8315-5e91346fa389}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>pch</Filter>
+    </ClInclude>
+    <ClInclude Include="DefineEnum.h">
+      <Filter>Define</Filter>
+    </ClInclude>
+    <ClInclude Include="FileSystem.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>pch</Filter>
+    </ClCompile>
+    <ClCompile Include="FileSystem.cpp" />
+  </ItemGroup>
+</Project>

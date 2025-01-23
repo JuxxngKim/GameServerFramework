@@ -1,6 +1,8 @@
-﻿#include <iostream>
+﻿#include "GameServerApp.h"
 
-int main()
+int main(int argc, const char** argv)
 {
-    std::cout << "Hello World!\n";
+	sf::GameServerApp app;
+
+	return app.Run();
 }
