@@ -7,20 +7,27 @@
     <Filter Include="pch">
       <UniqueIdentifier>{46abfdac-be48-4cd2-bd81-806aff1fbd32}</UniqueIdentifier>
     </Filter>
+    <Filter Include="GameServerApp">
+      <UniqueIdentifier>{cbc4c22d-b019-455f-9abf-9973cb72c676}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameServer.cpp">
       <Filter>Main</Filter>
     </ClCompile>
-    <ClCompile Include="GameServerApp.cpp" />
     <ClCompile Include="pch.cpp">
       <Filter>pch</Filter>
     </ClCompile>
+    <ClCompile Include="GameServerApp.cpp">
+      <Filter>GameServerApp</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="GameServerApp.h" />
     <ClInclude Include="pch.h">
       <Filter>pch</Filter>
+    </ClInclude>
+    <ClInclude Include="GameServerApp.h">
+      <Filter>GameServerApp</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

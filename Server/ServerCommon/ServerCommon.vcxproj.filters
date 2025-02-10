@@ -13,6 +13,12 @@
     <Filter Include="Utility\FileSystem">
       <UniqueIdentifier>{2e4f6b84-02c6-46b1-8315-5e91346fa389}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Utility\String">
+      <UniqueIdentifier>{6dc04164-3b1f-46ed-ad62-85e90ff00b5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\Ini">
+      <UniqueIdentifier>{4bb05e09-ccd8-4177-832b-fa2268fdf018}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -21,12 +27,25 @@
     <ClInclude Include="DefineEnum.h">
       <Filter>Define</Filter>
     </ClInclude>
-    <ClInclude Include="FileSystem.h" />
+    <ClInclude Include="FileSystem.h">
+      <Filter>Utility\FileSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="StrUtil.h">
+      <Filter>Utility\String</Filter>
+    </ClInclude>
+    <ClInclude Include="Singleton.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
       <Filter>pch</Filter>
     </ClCompile>
-    <ClCompile Include="FileSystem.cpp" />
+    <ClCompile Include="FileSystem.cpp">
+      <Filter>Utility\FileSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="StrUtil.cpp">
+      <Filter>Utility\String</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

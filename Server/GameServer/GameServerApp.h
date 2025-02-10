@@ -10,5 +10,12 @@ namespace sf
 
 	public:
 		int Run();
+
+	private:
+		bool LoadConfig();
+		bool ServiceRunByCommand();
+		bool Initialize();
+		bool RunLoop();
+
 	};
 }

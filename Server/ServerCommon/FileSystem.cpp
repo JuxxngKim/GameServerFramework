@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "FileSystem.h"
 #include <fstream>
-//#include <shellapi.h>
+#include "StrUtil.h"
 
 namespace sf
 {
@@ -20,9 +20,17 @@ namespace sf
 			auto fullPath = GetExecutableFullPath();
 
 			char filename[MAX_PATH];
-			_splitpath(fullPath.c_str(), nullptr, nullptr, filename, nullptr);
 
-			return filename;
+			errno_t err = _splitpath_s(fullPath.c_str(),
+				nullptr, 0,       // drive 정보 없음
+				nullptr, 0,       // dir 정보 없음
+				filename, MAX_PATH, // 파일명
+				nullptr, 0);      // 확장자 정보 없음
+			if (err != 0) {
+				// 에러 처리 (필요시)
+			}
+
+			return std::string(filename);
 		}
 
 		std::string GetExecutableDirName()
@@ -31,7 +39,15 @@ namespace sf
 
 			char drive[MAX_PATH];
 			char dir[MAX_PATH];
-			_splitpath(fullPath.c_str(), drive, dir, nullptr, nullptr);
+			errno_t err = _splitpath_s(fullPath.c_str(),
+				drive, MAX_PATH,  // 드라이브 정보
+				dir, MAX_PATH,    // 디렉토리 정보
+				nullptr, 0,       // 파일명 정보 없음
+				nullptr, 0);      // 확장자 정보 없음
+
+			if (err != 0) {
+				// 에러 처리 (필요시)
+			}
 
 			return std::string(drive) + std::string(dir);
 		}
@@ -51,7 +67,7 @@ namespace sf
 
 			for (int i = 0; i < argc; i++)
 			{
-				//result.push_back(StrUtil::ToUTF8(args[i]));
+				result.push_back(StrUtil::ToUTF8(args[i]));
 			}
 
 			return result;
