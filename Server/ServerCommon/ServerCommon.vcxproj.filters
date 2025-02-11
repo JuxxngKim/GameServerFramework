@@ -19,6 +19,9 @@
     <Filter Include="Utility\Ini">
       <UniqueIdentifier>{4bb05e09-ccd8-4177-832b-fa2268fdf018}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Config">
+      <UniqueIdentifier>{c26539fc-88e8-4cdb-9566-1e1d828ca4ec}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -36,6 +39,18 @@
     <ClInclude Include="Singleton.h">
       <Filter>Utility</Filter>
     </ClInclude>
+    <ClInclude Include="ConfigSource.h">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="IniFile.h">
+      <Filter>Utility\Ini</Filter>
+    </ClInclude>
+    <ClInclude Include="IniParser.h">
+      <Filter>Utility\Ini</Filter>
+    </ClInclude>
+    <ClInclude Include="IniSection.h">
+      <Filter>Utility\Ini</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -46,6 +61,18 @@
     </ClCompile>
     <ClCompile Include="StrUtil.cpp">
       <Filter>Utility\String</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfigSource.cpp">
+      <Filter>Config</Filter>
+    </ClCompile>
+    <ClCompile Include="IniParser.cpp">
+      <Filter>Utility\Ini</Filter>
+    </ClCompile>
+    <ClCompile Include="IniSection.cpp">
+      <Filter>Utility\Ini</Filter>
+    </ClCompile>
+    <ClCompile Include="IniFile.cpp">
+      <Filter>Utility\Ini</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

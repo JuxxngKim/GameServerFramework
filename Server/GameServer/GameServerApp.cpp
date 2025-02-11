@@ -1,5 +1,6 @@
 #include "GameServerApp.h"
 #include "pch.h"
+#include "FileSystem.h"
 
 namespace sf
 {
@@ -26,6 +27,8 @@ namespace sf
 
 	bool GameServerApp::ServiceRunByCommand()
 	{
+		auto args = FileSystem::CommandLineToArgv();
+
 		return true;
 	}
 
